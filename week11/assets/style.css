@@ -1,0 +1,22 @@
+body {
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+}
+
+h2 {
+	display: flex;
+	font-size: 2.5rem;
+	justify-content: center;
+	
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+#addButton{
+	background-color: black;
+	color: #fef9f9;
+	
+}
