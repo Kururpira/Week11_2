@@ -55,7 +55,8 @@ document.getElementById('button').onclick = function() {
     }
 	else{
         noTasks.innerHTML = '';
-    }
+    } 
+ 
 }
 
 window.addEventListener("load", showTask);
