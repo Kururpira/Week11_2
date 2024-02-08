@@ -1,9 +1,10 @@
 
 
 const inputBox = document.getElementById("input-box");
-const button = document.querySelector("button");
+const buttonAdd = document.getElementById("buttonAdd");
 const list = document.getElementById("list-container");
 const noTasks = document.getElementById("noTasks");
+
 
 
 
@@ -15,7 +16,9 @@ function addTask(){
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         list.appendChild(li);
+        button.disabled = false;
         inputBox.value = '';
+    
         
     }
     saveData();
@@ -30,7 +33,7 @@ list.addEventListener("click", (e)=>{
     }
 });
 
-button.addEventListener("click", addTask);
+buttonAdd.addEventListener("click", addTask);
 
 function saveData(){
     localStorage.setItem("data", list.innerHTML);

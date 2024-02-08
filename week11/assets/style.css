@@ -82,6 +82,17 @@ button{
     font-size: 18px;
     transition: all .25s ease;
 }
+#button:disabled{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    background-color: #edaca5;
+    color: #fff;
+    font-size: 18px;
+    transition: all .25s ease;
+}
 button:hover{
     filter: brightness(.8);
 }
@@ -141,10 +152,10 @@ span:hover{
 }
 #li {
     list-style-type: none; /* Убираем маркеры */
-   }
-   #noTasks{
+}
+#noTasks{
     font-size: 30px;
     color: rgba(87, 152, 210, 0.3);
     display: flex;
     justify-content: center;
-   }
+}
