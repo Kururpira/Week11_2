@@ -17,9 +17,7 @@ function addTask(){
         li.innerHTML = inputBox.value;
         list.appendChild(li);
         button.disabled = false;
-        inputBox.value = '';
-    
-        
+        inputBox.value = ''; 
     }
     saveData();
 }
@@ -44,7 +42,6 @@ function showTask(){
     if(savedData){
         list.innerHTML = savedData;
         noTasks.remove();
-        
     }
 }
 document.getElementById('button').onclick = function() {
