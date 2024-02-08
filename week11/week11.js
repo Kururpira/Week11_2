@@ -44,6 +44,7 @@ function showTask(){
     if(savedData){
         list.innerHTML = savedData;
         noTasks.remove();
+        
     }
 }
 document.getElementById('button').onclick = function() {
@@ -55,7 +56,6 @@ document.getElementById('button').onclick = function() {
 	else{
         noTasks.innerHTML = '';
     }
+}
 
-    
-  }
 window.addEventListener("load", showTask);
